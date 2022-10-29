@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+:root {
+	--cor-texto-conteudo: #000000;
+	--cor-texto-header: #ffffff;
+	--cor-bg-wrapper: #EFEFEF;
+
+	--cor-bg-btn: #6400B2;
+	--cor-bg-btn-opaco: #6500b209;
+
+	--peso-header: 800;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.shadow {
+	-webkit-box-shadow: -1px 14px 30px -5px rgba(0,0,0,0.37), -1px 14px 30px -21px rgba(0,0,0,0.37); 
+	box-shadow: -1px 14px 30px -5px rgba(0,0,0,0.37), -1px 14px 30px -21px rgba(0,0,0,0.37);
+}
+
+.static {
+	pointer-events: none;
+}
+
+body {
+	background: rgb(106,0,246);
+	background: linear-gradient(85deg, rgba(106,0,246,1) 0%, rgba(100,0,178,1) 100%);
+	height: 99vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.quiz-wrapper {
+	background-color: var(--cor-bg-wrapper);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: fit-content;
+	margin-block: 1rem;
+}
+
+h1.main-h1 {
+	color: var(--cor-texto-header);
+	font-weight: var(--peso-header);
+	font-size: 3rem;
+	text-align: center;
+}
+
+div.form-row {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1.8rem;
+	width: 50vw;
+	max-width: 600px;
+}
+
+div.form-row__item {
+	width: 100%;
+	display: flex;
+}
+
+div.form-row__item label {
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: right;
+}
+
+div.form-row__item input {
+	width: 80%;
+	align-self: flex-start;
+	border: 1px solid var(--cor-bg-btn);
+	border-radius: 0.35rem;
+	background-color: var(--cor-bg-btn-opaco);
+
+}
+
+button.btn {
+	background-color: var(--cor-bg-btn);
+	border: 1px solid var(--cor-bg-wrapper);
+	color: var(--cor-bg-wrapper);
+}
+
+/* Quiz */
+
+h1.quiz-question {
+	font-size: 1.8rem;
+}
+
+div.answer-group {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 13vh;
+}
+
+div#check-message-wrapper {
+	margin-block: 0.5rem;
+}
+
+span.quiz-answer {
+	font-size: 1.25rem;
+	flex-grow: 1;
+}
+
+input[type='radio']{
+	transform: scale(1.2);
+	margin-right: 0.5rem;
+}
+
+button.quiz__answer-btn {
+	margin-top: 0.5rem;
+}
+
+/* End */
+
+mark {
+	font-weight: 800;
+	background-color: var(--cor-bg-btn);
+	color: var(--cor-bg-wrapper);
+}
