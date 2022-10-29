@@ -22,7 +22,9 @@
 							Nome
 						</label>
 					</div>
-					<div class="form-row__item"><input type="text" name="i-nome" id="i-nome" class="form-input"></div>
+					<div class="form-row__item">
+						<input type="text" name="i-nome" id="i-nome" class="form-input">
+					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-row__item">
@@ -43,9 +45,11 @@
 					<div class="form-row__item"><input type="text" name="i-serie" id="i-serie" class="form-input"></div>
 				</div>
 
-				<button type="submit" class="btn btn-start-quiz shadow">
-				Iniciar o Quiz!
-				</button>
+				<div class="form-row">
+					<button type="submit" class="btn btn-start-quiz shadow">
+						Iniciar o Quiz!
+					</button>
+				</div>
 			</form>
 		</section>
 		

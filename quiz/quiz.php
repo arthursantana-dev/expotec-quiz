@@ -13,28 +13,28 @@
 <body>
 	<main class="container">
 
-	<section class="quiz-wrapper">
-		<span>Questão nº <span class="question-number"></span></span>
-		<script src="./js/getCurrentQuestionId.js"></script>
+		<section class="quiz-wrapper">
+			<mark><span>Questão nº <span class="question-number"></span></span></mark>
+			<script src="./js/getCurrentQuestionId.js"></script>
 
-		<div id="check-message-wrapper"></div>
+			<div id="check-message-wrapper"></div>
 
-		<h1 class="question-text">
-			<?php include './db-handlers/get_question.php' ?>
-		</h1>
+			<h1 class="question-text">
+				<?php include './db-handlers/get_question.php' ?>
+			</h1>
 
-		<div class="answer-group">
+			<div class="answer-group">
 
-			<?php include './db-handlers/get_answers.php' ?>
+				<?php include './db-handlers/get_answers.php' ?>
 
-			<button class="btn quiz__answer-btn" onclick='checkQuizAnswer()'>
-				Responder
-			</button>
-			
-		</div>
+				<button class="btn quiz__answer-btn" onclick='checkQuizAnswer()'>
+					Responder
+				</button>
+				
+			</div>
 
 
-	</section>
+		</section>
 
 	</main>
 	<script src="./js/quizEvents.js"></script>
